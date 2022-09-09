@@ -7,7 +7,7 @@ export class Bracket {
         stack.push(x)
         continue
       }
-      if (stack.length == 0) return false
+      if (stack.length === 0) return false
       if (x === ')') stack.pop()
     }
     return (stack.length === 0)
